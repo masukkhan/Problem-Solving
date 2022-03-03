@@ -4,7 +4,6 @@
 #include<string.h>
 #include<limits.h>
 
-#include<map>
 #include<set>
 #include<stack>
 #include<queue>
@@ -31,18 +30,20 @@ int main()
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
+    stack<int>stck;
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+    stck.push(10);
+    stck.push(20);
+    stck.push(30);
+    stck.push(40);
+
+    cout<<"stack size = "<<stck.size()<<endl;
+
+    int val = stck.top();
+    stck.pop();
+    cout<<"Front value = "<<val<<endl;
+    cout<<"stack size = "<<stck.size()<<endl;
+
 
     return 0;
 }

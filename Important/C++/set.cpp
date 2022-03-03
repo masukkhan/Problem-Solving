@@ -4,10 +4,8 @@
 #include<string.h>
 #include<limits.h>
 
-#include<map>
 #include<set>
-#include<stack>
-#include<queue>
+#include<unordered_set>
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -31,18 +29,22 @@ int main()
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
+    int i,x,n;
+    set<int>st;
+    while(1==scanf("%d",&n))
+    {
+        for(i=0;i<n;i++)
+        {
+            scanf("%d",&x);
+            st.insert(x);
+        }
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+        cout<<"set size = "<<st.size()<<endl;
+        for(auto it : st)
+            cout<<it<<endl;
+
+        ///try string
+    }
 
     return 0;
 }

@@ -31,18 +31,22 @@ int main()
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
+    int tks, ks=1;
+    scanf("%d",&tks);
+    while(tks--)
+    {
+        int a,b,sum=0,sum2;
+        scanf("%d%d",&a,&b);
+        sum=a+b;
+        sum2=21-sum;
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+        if(sum<=10)
+            printf("-1\n");
+
+        if(sum>10)
+            printf("%d\n",sum2);
+    }
 
     return 0;
 }
+

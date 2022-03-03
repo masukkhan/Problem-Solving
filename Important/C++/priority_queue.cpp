@@ -4,7 +4,6 @@
 #include<string.h>
 #include<limits.h>
 
-#include<map>
 #include<set>
 #include<stack>
 #include<queue>
@@ -31,18 +30,17 @@ int main()
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
+    priority_queue<int>pq;
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+    pq.push(1);
+    pq.push(3);
+    pq.push(2);
+
+    cout<<"Top: "<<pq.top()<<endl;
+    pq.pop();
+
+    cout<<"Top: "<<pq.top()<<endl;
+    pq.pop();
 
     return 0;
 }

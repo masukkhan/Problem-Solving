@@ -31,18 +31,22 @@ int main()
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
+    map<char ,int>mp;
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+    int i,tks, ks=1;
+    char str[10];
+    scanf("%d",&tks);
+    while(tks--)
+    {
+        mp.clear();
+        scanf("%s",str);
+        for(i=0;i<6;i++)
+            mp[str[i]]=i;
+        if(mp['r']<mp['R'] && mp['g']<mp['G'] && mp['b']<mp['B'])
+            printf("YES\n");
+        else
+            printf("NO\n");
+    }
 
     return 0;
 }

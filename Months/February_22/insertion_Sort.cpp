@@ -4,11 +4,6 @@
 #include<string.h>
 #include<limits.h>
 
-#include<map>
-#include<set>
-#include<stack>
-#include<queue>
-#include<iostream>
 #include<algorithm>
 using namespace std;
 
@@ -31,18 +26,28 @@ int main()
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
+    int ar[100];
+    int n,i,j,temp;
+    while(1==scanf("%d",&n))
+    {
+        for(i=0;i<n;i++)
+            scanf("%d",&ar[i]);
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+        for(i=1;i<n;i++)
+        {
+            temp=ar[i];
+            j=i-1;
+            while(j>=0 && ar[j]>temp)
+            {
+                ar[j+1]=ar[j];
+                j--;
+            }
+            ar[j+1]=temp;
+        }
+
+        for(i=0;i<n;i++)
+            printf("%d ",ar[i]);
+    }
 
     return 0;
 }

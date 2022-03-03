@@ -31,18 +31,15 @@ int main()
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+        int x,y,t=0,ans=0;
+        scanf("%d%d",&x,&y);
+        t=y/2;
+        ans=x-t;
+        printf("%d",ans);
+
 
     return 0;
 }
+
+

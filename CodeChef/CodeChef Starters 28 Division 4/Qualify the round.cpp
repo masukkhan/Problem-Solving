@@ -31,18 +31,23 @@ int main()
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+
+    int tks, ks=1;
+    scanf("%d",&tks);
+    while(tks--)
+    {
+        int x,a,b,ans=0;
+        scanf("%d%d%d",&x,&a,&b);
+        ans=((a*1)+(b*2));
+        if(ans>=x)
+            printf("Qualify\n");
+        else
+            printf("NotQualify\n");
+
+    }
 
     return 0;
 }
+
+

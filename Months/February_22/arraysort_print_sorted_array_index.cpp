@@ -24,25 +24,34 @@ template<class T> T abs(T x){
 
 const double eps = 1e-8;
 const double pi = acos(-1.0);
-
+int i,s,n,ar[100];
+    int tks, ks=1;
 
 int main()
 {
 //    freopen("input.txt","r",stdin);
 //    freopen("output.txt","w",stdout);
 
-//    while(1==scanf("",&))
-//    {
-//
-//    }
+    map<int, int>mp;
 
-//    int tks, ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-//
-////        printf("Case %d: ",ks++);
-//    }
+
+    scanf("%d",&tks);
+    while(tks--)
+    {
+       scanf("%d",&n);
+       for(i=0;i<n;i++)
+            scanf("%d",&ar[i]);
+       sort(ar,ar+n);
+       for(i=0;i<n;i++)
+     {
+         s=i;
+         mp[s]++;
+         printf("%d",mp[s]);
+     }
+
+
+    }
 
     return 0;
 }
+
